@@ -4,11 +4,18 @@
 \alias{decision_curve}
 \title{Calculate net benefit/decision curves}
 \usage{
-decision_curve(formula, data, family = binomial(link = "logit"),
-  policy = c("opt-in", "opt-out"), fitted.risk = FALSE,
-  thresholds = seq(0, 1, by = 0.01), confidence.intervals = 0.95,
-  bootstraps = 500, study.design = c("cohort", "case-control"),
-  population.prevalence)
+decision_curve(
+  formula,
+  data,
+  family = binomial(link = "logit"),
+  policy = c("opt-in", "opt-out"),
+  fitted.risk = FALSE,
+  thresholds = seq(0, 1, by = 0.01),
+  confidence.intervals = 0.95,
+  bootstraps = 500,
+  study.design = c("cohort", "case-control"),
+  population.prevalence
+)
 }
 \arguments{
 \item{formula}{an object of class 'formula' of the form outcome ~ predictors, giving the prediction model to be fitted using glm. The outcome must be a binary variable that equals '1' for cases and '0' for controls.}

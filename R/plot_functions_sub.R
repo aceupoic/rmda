@@ -116,7 +116,7 @@ plot_generic<- function(xx, predictors, value, plotNew,
                         impact.legend.2 = FALSE,
                         population.size = 1000,
                         policy = policy,
-                        plot.grid  = TRUE, ...){
+                        plot.grid  = F, ...){
 ## xx is output from get_DecisionCurve,
 ## others are directly from the function call
 

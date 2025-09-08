@@ -4,8 +4,12 @@
 \alias{summary.decision_curve}
 \title{Displays a useful description of a decision_curve object}
 \usage{
-\method{summary}{decision_curve}(object, ..., measure = c("sNB", "NB", "TPR",
-  "FPR", "TNR", "FNR"), nround = 3)
+\method{summary}{decision_curve}(
+  object,
+  ...,
+  measure = c("sNB", "NB", "TPR", "FPR", "TNR", "FNR"),
+  nround = 3
+)
 }
 \arguments{
 \item{object}{decision_curve object to summarise}

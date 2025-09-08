@@ -12,11 +12,11 @@ The package 'rmda' (risk model decision analysis) provides tools to evaluate the
 Decision curves display estimates of the (standardized) net benefit over a range of probability thresholds used to categorize observations as 'high risk'. The curves help evaluate a treatment policy that recommends treatment for patients who are estimated to be 'high risk' by comparing the population impact of a risk-based policy to "treat all" and "treat none" intervention policies.  Curves can be estimated using data from a prospective cohort.  In addition, rmda can estimate decision curves using data from a case-control study if an estimate of the population outcome prevalence is available.  Version 1.4 of the package provides an alternative framing of the decision problem for situations where treatment is the standard-of-care and a risk model might be used to recommend that low-risk patients (i.e., patients below some risk threshold) opt out of treatment. 
    
    
-   Confidence intervals calculated using the bootstrap can be computed and displayed. A wrapper function to calculate cross-validated curves using k-fold cross-validation is also provided.
+   Confidence intervals calculated using the bootstrap can be computed and displayed. A wrapper function to calculate cross-validated curves using k-fold cross-validation is also provided. 
 
 Functions in this package include:
 
-\code{\link{decision_curve}}, 
+ \code{\link{decision_curve}}, 
  
  \code{\link{summary.decision_curve}},
  

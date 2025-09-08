@@ -4,12 +4,26 @@
 \alias{plot_clinical_impact}
 \title{Plot the clinical impact curve from a DecisionCurve object.}
 \usage{
-plot_clinical_impact(x, population.size = 1000, cost.benefit.axis = TRUE,
-  n.cost.benefits = 6, cost.benefits, confidence.intervals, col = "black",
-  lty = 1, lwd = 2, xlim, ylim, xlab, ylab,
-  cost.benefit.xlab = "Cost:Benefit Ratio", legend.position = c("topright",
-  "right", "bottomright", "bottom", "bottomleft", "left", "topleft", "top",
-  "none"), ...)
+plot_clinical_impact(
+  x,
+  population.size = 1000,
+  cost.benefit.axis = TRUE,
+  n.cost.benefits = 6,
+  cost.benefits,
+  confidence.intervals,
+  col = "black",
+  lty = 1,
+  lwd = 2,
+  xlim,
+  ylim,
+  xlab,
+  ylab,
+  cost.benefit.xlab = "Cost:Benefit Ratio",
+  legend.position = c("topright", "right", "bottomright", "bottom", "bottomleft", "left",
+    "topleft", "top", "none"),
+  plot.grid = TRUE,
+  ...
+)
 }
 \arguments{
 \item{x}{decision_curve object to plot. Assumes output from function 'decision_curve'}
@@ -41,6 +55,8 @@ plot_clinical_impact(x, population.size = 1000, cost.benefit.axis = TRUE,
 \item{cost.benefit.xlab}{label of cost:benefit ratio axis.}
 
 \item{legend.position}{character vector giving position of legend. Options are "topright" (default), "right", "bottomright", "bottom", "bottomleft", "left", "topleft", "top", or "none".}
+
+\item{plot.grid}{plot grid lines in the panel background (default = TRUE).}
 
 \item{...}{other options directly send to plot()}
 }

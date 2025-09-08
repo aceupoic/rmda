@@ -4,7 +4,8 @@
 \name{dcaData_cc}
 \alias{dcaData_cc}
 \title{Simulated dataset for package 'DecisionCurve'}
-\format{A data frame with 500 rows and 6 variables:
+\format{
+A data frame with 500 rows and 6 variables:
 \itemize{
   \item Age: Age in years.
   \item Female: Indicator for female gender.
@@ -12,7 +13,8 @@
   \item Marker1: simulated biomarker.
   \item Marker2: simulated biomarker.
   \item Cancer: Indicator for cancer.
-}}
+}
+}
 \usage{
 dcaData_cc
 }

@@ -4,8 +4,14 @@
 \alias{Add_CostBenefit_Axis}
 \title{Add cost benefit ratio axis to a decision curve plot.}
 \usage{
-Add_CostBenefit_Axis(xlim, cost.benefits, n.cost.benefits = 6, line = 4,
-  policy, ...)
+Add_CostBenefit_Axis(
+  xlim,
+  cost.benefits,
+  n.cost.benefits = 6,
+  line = 4,
+  policy,
+  ...
+)
 }
 \arguments{
 \item{xlim}{range of x-axis.}

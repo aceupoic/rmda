@@ -4,9 +4,16 @@
 \alias{cv_decision_curve}
 \title{Calculate cross-validated decision curves}
 \usage{
-cv_decision_curve(formula, data, family = binomial(link = "logit"),
-  thresholds = seq(0, 1, by = 0.01), folds = 5, study.design = c("cohort",
-  "case-control"), population.prevalence, policy = c("opt-in", "opt-out"))
+cv_decision_curve(
+  formula,
+  data,
+  family = binomial(link = "logit"),
+  thresholds = seq(0, 1, by = 0.01),
+  folds = 5,
+  study.design = c("cohort", "case-control"),
+  population.prevalence,
+  policy = c("opt-in", "opt-out")
+)
 }
 \arguments{
 \item{formula}{an object of class 'formula' of the form outcome ~ predictors, giving the prediction model to be fitted using glm. The outcome must be a binary variable that equals '1' for cases and '0' for controls.}
